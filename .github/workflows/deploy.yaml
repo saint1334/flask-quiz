@@ -16,7 +16,7 @@ jobs:
         run: echo "Espadon1988!" | docker login -u "saint1334" --password-stdin
 
       - name: Build Docker image
-        run: docker build -t your-dockerhub/flask-quiz:latest -f flask-quiz/Dockerfile flask-quiz/
+        run: docker build -t your-dockerhub/flask-quiz:latest -f src/flask-quiz/Dockerfile src/flask-quiz/
 
       - name: Push image to Docker Hub
         run: docker push your-dockerhub/flask-quiz:latest
