@@ -14,6 +14,9 @@ jobs:
 
       - name: Log in to Docker Hub
         run: echo "Espadon1988!" | docker login -u "saint1334" --password-stdin
+        
+      - name: Show folder structure
+        run: ls -la
 
       - name: Build Docker image
         run: docker build -t your-dockerhub/flask-quiz:latest -f Dockerfile .
