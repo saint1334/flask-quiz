@@ -39,9 +39,9 @@ jobs:
           mkdir -p ~/.kube
           echo "${{ secrets.KUBE_CONFIG }}" > ~/.kube/config
 
-      - name: Deploy with Helm
-        run: |
-          helm upgrade --install flask-quiz ./flask-quiz/helm-chart \
+       - name: Deploy with Helm
+         run: |
+           helm upgrade --install flask-quiz ./flask-quiz/helm-chart \
             --set image.repository=saint1334/flask-quiz \
             --set image.tag=latest
 
