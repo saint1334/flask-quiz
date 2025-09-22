@@ -1,0 +1,7 @@
+image:
+  repository: saint1334/flask-quiz
+  tag: latest
+service:
+  type: NodePort
+  port: 5000
+
