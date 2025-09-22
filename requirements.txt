@@ -1,1 +1,3 @@
-Flask==2.3.2\nFlask-SQLAlchemy\nFlask-Login
+Flask==2.3.2
+Flask-SQLAlchemy
+Flask-Login
